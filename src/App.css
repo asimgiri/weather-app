@@ -1,33 +1,91 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background: #36363c;
+}
+
+.app_container {
+  width: 340px;
+  height: 500px;
+  border: 1px solid #dadce0;
   text-align: center;
+  font-size: 14px;
+  margin: 3rem auto;
+  border-radius: 8px;
+  padding: 12px 0;
+  background: #f8f9fc;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.app_container input {
+  width: 320px;
+  padding: 6px 8px;
+  border: 1px solid #a9a9a9;
+  border-radius: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:focus {
+  outline: none;
+  border: 1px solid #888;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-search {
+  position: relative;
+  border: 1px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app_container .content {
+  margin: 1.5rem
+}
+
+.font-gray {
+  color: #5f6368;
+}
+
+.app_container img {
+  margin-bottom: .3rem;
+  border-radius: 8px;
+}
+
+.app_container h4 {
+  font-weight: 300;
+  margin: .5rem 0 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.app_container h2 {
+  font-size: 3.4rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.app_container sup {
+  font-size: 2rem;
+  position: relative;
+  top: -10px;
+}
+
+.app_container .more {
+  width: 50%;
+  text-align: left;
+}
+
+.app_container .more p{
+  margin: 10px 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
